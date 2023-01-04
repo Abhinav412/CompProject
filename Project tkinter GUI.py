@@ -1,7 +1,7 @@
 from tkinter import *
 root = Tk()
-T = Text(root, height = 20, width = 30, bg='blue', fg='red')
-T.grid(row=10, column=0)
+root.title('ADHD BANK')
+T = Label(root, text='ADHD BANK', font=("Bold",150),bg='red', fg='blue')
+T.place(relx=0.5,rely=0.5,anchor='center')
 T.pack()
-T.insert(END, 'ADHD BANK')
 root.mainloop()
