@@ -7,16 +7,25 @@ T.place(relx=0.5,rely=0.5,anchor='center')
 T.pack()
 L = Label(root, text='LOGIN' ,font=("Bold",40),fg='green',bg='red')
 L.pack()
-e=Entry(root,width=50)
-e.pack()
-e.insert(0,"Enter username or account number")
-f=Entry(root,width=50)
-f.pack()
-f.insert(0,"Password")
-bt1=Button(root, text="LOGIN",width=15,font=("Bold"))
-bt1.pack()
-G = Label(root, text='REGISTER', font=("Bold",35),fg='indigo',bg='red')
-G.pack()
-bt2=Button(root, text='Click here to register', width=20,font=("Bold"))
-bt2.pack()
+username_label = Label(root, text="Enter username or account number:",width=40,bg='red',font=("Bold"))
+username_text = Entry(width=40)
+
+password_label = Label(root, text="Password:",width=40,bg='red',font=("Bold"))
+password_text = Entry(show = "*",width=40)
+
+login_button = Button(text = "LOGIN",width=25,bg='green',font=("Bold"))
+
+username_label.pack()
+username_text.pack()
+password_label.pack()
+password_text.pack()
+login_button.place(relx=0.5,rely=0.55,anchor='center')
+
+
+
+R = Label(root, text="Register" ,font=("Bold",40),bg='red',fg='indigo')
+register_button = Button(text="Click here to register", width=25,bg='blue',fg='black',font=("Bold"))
+
+R.place(relx=0.5,rely=0.7,anchor='center')
+register_button.place(relx=0.5,rely=0.8,anchor='center')
 root.mainloop()
