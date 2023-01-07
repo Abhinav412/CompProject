@@ -30,3 +30,4 @@ register_button = Button(text="Click here to register", width=25,bg='blue',fg='b
 R.place(relx=0.5,rely=0.7,anchor='center')
 register_button.place(relx=0.5,rely=0.8,anchor='center')
 root.mainloop()
+#completed login page
