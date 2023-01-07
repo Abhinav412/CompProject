@@ -21,7 +21,8 @@ password_label.pack()
 password_text.pack()
 login_button.place(relx=0.5,rely=0.55,anchor='center')
 
-
+forgotpsswd_button = Button(text= "Forgot password",width=25,font=("Bold"))
+forgotpsswd_button.place(relx=0.5,rely=0.6,anchor='center')
 
 R = Label(root, text="Register" ,font=("Bold",40),bg='red',fg='indigo')
 register_button = Button(text="Click here to register", width=25,bg='blue',fg='black',font=("Bold"))
